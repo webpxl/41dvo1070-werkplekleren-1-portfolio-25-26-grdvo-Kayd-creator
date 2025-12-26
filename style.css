@@ -69,6 +69,37 @@ header {
     pointer-events: none;
 }
 
+.main-container {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.profile-photo img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hoofding1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.paragraphs {
+    font-size: 1.1rem;
+}
+
 /* Footer instellingen */
 footer {
     display: flex;
