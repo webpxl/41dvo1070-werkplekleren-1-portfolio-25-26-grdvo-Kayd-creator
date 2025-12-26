@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url('https://wallpapers.com/images/hd/dark-laptop-mountaintop-view-c5xvh55o47yp0axu.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-header{
+    position: relative;
+    height: 60vh; /* adjust as needed */
+    min-height: 320px;
+    color: #ffffff;
+    display: block;
+}
+
+/* top-left name */
+.header-name{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #ffffff;
+}
+
+/* top-right nav */
+.header-nav{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 6px 8px;
+    border-radius: 4px;
+    transition: background 0.15s, color 0.15s;
+}
+
+.header-nav a:hover,
+.header-nav a:focus{
+    background: rgba(255,255,255,0.12);
+    outline: none;
+}
+
+/* centered word */
+.header-center{
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    /* responsive sizing */
+    font-size: clamp(2rem, 8vw, 5rem);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    pointer-events: none;
+}
