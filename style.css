@@ -68,3 +68,31 @@ header {
     text-transform: uppercase;
     pointer-events: none;
 }
+
+/* Footer instellingen */
+footer {
+    display: flex;
+    justify-content: space-between; /* Duwt links en rechts uit elkaar */
+    background-color: #222222;
+    color: white;
+    padding: 4rem 5rem;
+}
+
+/* Zorgt dat Locatie en Contact naast elkaar staan binnen de rechter groep */
+.footer-right-group {
+    display: flex;
+    gap: 8rem; /* De ruimte tussen Locatie en Contact */
+}
+
+.footer-col h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.footer-col p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
