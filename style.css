@@ -100,6 +100,59 @@ header {
     font-size: 1.1rem;
 }
 
+.projects {
+    background-color: #222222;
+    color: white;
+    padding: 3rem;
+}
+
+.hoofding2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Ruimte tussen de projecten */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+article {
+    flex: 1; /* Zorgt dat ze elk even breed zijn */
+    background-color: #333; /* Iets lichtere achtergrond voor contrast */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stapelt img, h3 en p verticaal */
+}
+
+.project-img {
+    width: 100%;
+    height: 250px; /* Vaste hoogte voor uniformiteit */
+    object-fit: cover; /* Zorgt dat de afbeelding mooi vult zonder vervorming */
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    font-weight: 900;
+    color: #ffdd00;
+}
+
+.project-content h4 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #ffaa00;
+}
+
 /* Footer instellingen */
 footer {
     display: flex;
