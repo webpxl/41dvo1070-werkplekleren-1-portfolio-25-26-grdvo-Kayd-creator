@@ -183,6 +183,41 @@ article {
     flex-direction: column; /* Stapelt img, h3 en p verticaal */
 }
 
+/* Bovenste sectie */
+.story-section {
+    display: flex;
+    align-items: center; /* Zorgt dat tekst en beeld verticaal uitlijnen */
+    padding: 5rem;
+    gap: 4rem; /* Ruimte tussen beeld en tekst */
+}
+
+.image-container {
+    flex: 1;
+}
+
+.placeholder-img {
+    width: 100%;
+}
+
+.text-container {
+    flex: 1;
+}
+
+.text-container h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    /*font-weight: bold;*/
+    max-width: 500px;
+}
+
 /* Footer instellingen */
 footer {
     display: flex;
