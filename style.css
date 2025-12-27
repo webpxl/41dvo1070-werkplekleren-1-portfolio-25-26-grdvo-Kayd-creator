@@ -153,6 +153,36 @@ article {
     color: #ffaa00;
 }
 
+.skills {
+    color: white;
+    padding: 3rem;
+}
+
+.hoofding3 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #333333;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Ruimte tussen de projecten */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article-skill {
+    flex: 1; /* Zorgt dat ze elk even breed zijn */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stapelt img, h3 en p verticaal */
+}
+
 /* Footer instellingen */
 footer {
     display: flex;
