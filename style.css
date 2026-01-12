@@ -214,7 +214,6 @@ article {
 .text-container p {
     font-size: 1.1rem;
     line-height: 1.5;
-    /*font-weight: bold;*/
     max-width: 500px;
 }
 
@@ -244,4 +243,65 @@ footer {
     margin: 0.3rem 0;
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+/* Voor tablets en smartphones */
+@media (max-width: 1024px) {
+    .main-container,
+    .story-section {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .info, .profile-photo, .image-container, .text-container {
+        width: 100%;
+    }
+
+    .text-container p {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-container h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Voor smartphones */
+@media (max-width: 768px) {
+    .header-center {
+        font-size: 3rem;
+    }
+
+    /* Zet de projecten en skills onder elkaar */
+    .projects-container,
+    .skills-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hoofding1, .hoofding2, .hoofding3 {
+        font-size: 2.2rem;
+    }
+
+    /* Footer aanpassen voor mobiel */
+    footer {
+        flex-direction: column;
+        gap: 3rem;
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .footer-right-group {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Profile photo centreren */
+    .profile-photo img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
 }
