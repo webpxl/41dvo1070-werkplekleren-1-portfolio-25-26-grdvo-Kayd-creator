@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f6f7;
+    color: #222;
+    padding: 0;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+}
+
+/* ===== OLR BLOKKEN ===== */
+p {
+    background: #ffffff;
+    padding: 1.3rem 1.5rem;
+    border-radius: 14px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.07);
+    font-size: 0.95rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 900px;
+}
+
+/* subtiele hover (optioneel) */
+p:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== OLR LABEL ===== */
+p span {
+    font-weight: 700;
+    color: #000;
+    margin-right: 0.4rem;
+    white-space: nowrap;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        letter-spacing: 1px;
+    }
+
+.kern {
+    display: inline-block;
+    margin: 2.8rem 0 0.8rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+span + p {
+    background: linear-gradient(135deg, #000, #333);
+    color: #fff;
+}
+
+span + p strong {
+    color: #fff;
+}
+
+    .xfactor {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+
+    .card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+
+    .icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: #000;
+    }
+
+
+    .card p {
+        line-height: 1.6;
+        font-size: 0.95rem;
+        color: #444;
+    }
+
+    footer {
+        margin-top: 4rem;
+        text-align: center;
+        font-size: 0.85rem;
+        color: #777;
+    }
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
