@@ -298,10 +298,218 @@ footer {
     color: var(--text-dim);
 }
 
-/* Mobile responsive */
+/* Work Experience Header */
+.work-experience-header {
+    position: relative;
+    padding: 50px;
+}
+
+.work-experience-header h2 {
+    position: absolute;
+    font-size: 12rem;
+    font-weight: 900;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.1);
+    color: transparent;
+    z-index: -1;
+    margin: 0;
+}
+
+.work-sub {
+    top: 80px;
+}
+
+/* Work Experience */
+.work-experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 100px 50px;
+}
+
+.experience-card {
+    background: var(--card-bg);
+    border: 1px solid #1f1f1f;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    border-color: var(--gold);
+}
+
+.experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.experience-card h3,
+.experience-card .experience-period,
+.experience-card p {
+    padding: 0 20px;
+}
+
+.experience-card h3 {
+    margin: 20px 0 10px 0;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.experience-period {
+    color: var(--gold);
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-intro {
+    color: var(--text-dim);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: var(--card-bg);
+    border: 1px solid #1f1f1f;
+    border-radius: 1rem;
+    padding: 15px 20px;
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--text-dim);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    background: rgba(41, 133, 223, 0.05);
+}
+
+.submit-btn {
+    background: var(--gold);
+    color: var(--bg-color);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Special Section */
+.special-section {
+    padding: 100px 50px;
+    background: linear-gradient(135deg, rgba(41, 133, 223, 0.05) 0%, rgba(41, 133, 223, 0.02) 100%);
+    border-top: 1px solid #1f1f1f;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.special-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.special-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.special-text p {
+    color: var(--text-dim);
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.special-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    height: 400px;
+}
+
+.special-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+
+.special-section:hover .special-image img {
+    transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
     .projects-grid { grid-template-columns: 1fr; }
     .footer-content { flex-direction: column; gap: 40px; }
     .header-nav { padding: 20px; }
     .nav-links { display: none; }
+    .special-content {
+        grid-template-columns: 1fr;
+    }
+
+    .special-text h2 {
+        font-size: 2rem;
+    }
+
+    .special-image {
+        height: 300px;
+    }
 }
